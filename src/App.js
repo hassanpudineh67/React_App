@@ -8,6 +8,7 @@ import InfoTitles from './Components/InfoTitles.js';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Components/Nav.js';
 
+
 class App extends Component {
 
     render() {
@@ -16,6 +17,7 @@ class App extends Component {
                     <div className="App">
                         <Nav/>
                         <FetchRandomUser/>
+                        <InfoTitles name="ام"/>
                         <InfoTitles name="نام"/>
                         <InfoTitles name="نام خانوادگی"/>
                         <InfoTitles name= "سن"/>
