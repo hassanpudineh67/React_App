@@ -1,0 +1,170 @@
+@font-face {
+    font-family:myFont;
+    src: url('../irsans.ttf');
+}
+.HeaderStyle{
+    background-color: rgb(73,79,82);
+    /* border: 1px solid transparent; */
+    width: 100%;
+    /* height: 61px; */
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.ProfileStyle {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-position: top;
+    border-radius: 101px;
+    width: 75px;
+    height: 61px;
+    border: 1px solid transparent;
+    margin: auto;
+    position: relative;
+    left: -9px;
+    right: 0;
+}
+.navPro{
+    border: 1px solid transparent;
+    box-shadow: 0 2px 3px transparent;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 512px;
+    top: 72px;
+    right: 0;
+    direction: rtl;
+    margin: auto;
+}
+h1 {
+    text-align: right;
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+    padding: 0 211px;
+}
+.HeaderStyle{
+    background-color: rgb(73,79,82);
+    border: 1px solid transparent;
+    width: 100%;
+    height: 61px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.navPro .navp{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    direction: rtl;
+    position: relative;
+    top: 0%;
+     right: 80px;
+     transform: translateY(9%);
+    font-family: myFont;
+}
+.fetchedImage{
+    border-radius: 126px;
+    position: relative;
+    top: 38px;
+    left: 443px;
+    width: 230px;
+    height: 226px;
+    z-index: 10;
+}
+.fetchedImage:hover {
+    box-shadow: 1px 2px 2px 1px rgba(0, 140, 186, 0.5);
+}
+.personInfoWrapper{
+    border:1px dashed blue;
+    height:220px;
+    width:200px;
+    background-color: lightblue;
+}
+.Info{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    width: 100px;
+     height: 38px;
+     position: absolute;
+     top: 81px;
+     left: 0px;
+    margin: auto;
+}
+.Info1{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    width: 100px;
+    height: 38px;
+    position: absolute;
+     top: 136px;
+     left: 0px;
+    margin: auto;
+}
+.Info2{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    width: 100px;
+    height: 38px;
+     position: absolute;
+     top: 192px;
+     left: 0px;
+    margin: 0 0px;
+}
+.Info3{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    width: 100px;
+    height: 38px;
+     position: absolute;
+     top: 248px;
+     left: 0px;
+    margin: auto;
+}
+
+.InfoTitles{
+    background-color: #27aeb0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #cccccc;
+    width: 200px;
+    height: 39px;
+    position: relative;
+    left: 257px;
+    top: 8px;
+    bottom: 46px;
+    margin: 15px auto
+}
+.InfoTitles p{
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    direction: rtl;
+    position: relative;
+    top: 11%;
+    /* right: 80px; */
+    /* transform: translateY(9%); */
+    font-family: myFont;
+}
+nav{
+    position: relative;
+    left: 0px;
+    width: 1368px;
+    height: 54px;
+    border: 1px solid transparent;
+    background-color: #3359FF;
+    margin: auto;
+}
+.nav-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 13px 20px;
+    font-family: myFont;
+}
+.nav-links li{
+    color: white
+}
