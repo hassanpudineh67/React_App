@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import Navbar from './Components/Navbar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FetchRandomUser from './Components/FetchRandomUser.js';
-import Header from './Components/Header.js';
 import InfoTitles from './Components/InfoTitles.js';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Components/Nav.js';
-
-
+import About from './Components/About.js';
+import Shop from './Components/Shop.js';
+import Navbar from './Components/Navbar.js';
 class App extends Component {
 
     render() {
@@ -16,16 +15,15 @@ class App extends Component {
             <Router>
                     <div className="App">
                         <Nav/>
-                        <FetchRandomUser/>
-                        <InfoTitles name="ام"/>
-                        <InfoTitles name="نام"/>
-                        <InfoTitles name="نام خانوادگی"/>
-                        <InfoTitles name= "سن"/>
-                        <InfoTitles name="ایمیل"/>
-                        <Navbar name='پروفایلِ من'/>
-                        <Navbar name='پیام های دریافتی'/>
-                        <Navbar name='پیام های ارسالی'/>
-                        <Navbar name='اسپم ها'/>
+                        <Switch>
+                            <Route path="/shop" component={Shop}/>
+                            <Route path="/about" component={About}/>
+                            <Route path="/" component={FetchRandomUser}/>
+                                <InfoTitles name="نام" />
+                                <InfoTitles name="نام خانوادگی"/>
+                                <InfoTitles name= "سن"/>
+                                <InfoTitles name="ایمیل"/>
+                        </Switch>
                     </div>
             </Router>
         );

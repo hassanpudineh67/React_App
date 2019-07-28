@@ -1,6 +1,9 @@
 @font-face {
     font-family:myFont;
-    src: url('../irsans.ttf');
+    src: url('./irsans.ttf');
+}
+*{
+    font-family: myFont;
 }
 .HeaderStyle{
     background-color: rgb(73,79,82);
@@ -11,15 +14,67 @@
     left: 0;
     top: 0px;
 }
-.ProfileStyle {
-    background-repeat: no-repeat;
+.inputWithIcon{
+    border: 1px solid #aaaaaa7d;
+    width: 196px;
+    height: 29px;
+    border-radius: 41px;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+    position: absolute;
+    top: 12px;
+    left: 66px;
+}
+.inputWithIcon input[type="text"]{
+    position: absolute;
+    top: -7px;
+    left: -65px;
+    width: 240px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    direction: rtl;
+    height: 40px;
+    margin-right: 10px;
     background-color: transparent;
-    background-size: cover;
-    background-position: top;
+    font-size: 12px;
+    font-family: myFont;
+    z-index: 10;
+}
+
+.inputWithIcon i{
+    color: #aaaaaa7d;
+    position: absolute;
+    right: 9px;
+    top: -1px;
+    padding: 5px 5px;
+}
+.inputWithIcon:hover{
+    border-color: #D19A58;
+    box-shadow: 0 0 8px 0 #D19A58;
+}
+.inputWithIcon input[type="text"]:active,.inputWithIcon:active{
+    outline: none;
+    border: 1px solid transparent;
+
+}
+.inputWithIcon h4{
+    font-family: irsans;
+    color: #aaaaaa7d;
+    position: absolute;
+    top: -3px;
+    left: 65px;
+    font-size: 12px;
+}
+.ProfileStyle {
     border-radius: 101px;
     width: 75px;
     height: 61px;
-    border: 1px solid transparent;
+    border: 1px solid #e1e1e126;
+    box-shadow: 0 2px 3px;
     margin: auto;
     position: relative;
     left: -9px;
@@ -51,27 +106,27 @@ h1 {
     width: 100%;
     height: 61px;
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 0px;
 }
-.navPro .navp{
+.navPro .nav p{
     text-align: center;
     font-size: 20px;
     color: black;
     direction: rtl;
     position: relative;
     top: 0%;
-     right: 80px;
-     transform: translateY(9%);
+    right: 80px;
+    transform: translateY(9%);
     font-family: myFont;
 }
 .fetchedImage{
     border-radius: 126px;
     position: relative;
-    top: 38px;
-    left: 443px;
-    width: 230px;
-    height: 226px;
+    top: 7px;
+    left: -532px;
+    width: 120px;
+    height: 116px;
     z-index: 10;
 }
 .fetchedImage:hover {
@@ -84,47 +139,61 @@ h1 {
     background-color: lightblue;
 }
 .Info{
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 3px #ccc;
-    width: 100px;
-     height: 38px;
-     position: absolute;
-     top: 81px;
-     left: 0px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
+    height: 38px;
+    position: relative;
+    top: 9px;
+    left: -150px;
     margin: auto;
 }
 .Info1{
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 3px #ccc;
-    width: 100px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
     height: 38px;
     position: absolute;
-     top: 136px;
-     left: 0px;
+    top: 183px;
+    left: 180px;
     margin: auto;
 }
+.FetchedContent{
+    border: 1px solid #e9d9d9;
+    width: 1210px;
+    position: relative;
+    left: 0px;
+    top: 120px;
+    height: 400px;
+    box-shadow: 0 2px 3px;
+    margin: auto;
+}
+.FetchedContent p{
+    padding: 2px 20px;
+    font-size: 22px;
+}
 .Info2{
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 3px #ccc;
-    width: 100px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
     height: 38px;
-     position: absolute;
-     top: 192px;
-     left: 0px;
-    margin: 0 0px;
+    position: absolute;
+    top: 236px;
+    left: 180px;
+    margin: auto;
 }
 .Info3{
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 3px #ccc;
-    width: 100px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
     height: 38px;
-     position: absolute;
-     top: 248px;
-     left: 0px;
+    position: absolute;
+    top: 289px;
+    left: 180px;
     margin: auto;
 }
 
-.InfoTitles{
+.InfoTitle{
     background-color: #27aeb0;
     border: 1px solid #ccc;
     box-shadow: 0 2px 3px #cccccc;
@@ -134,17 +203,15 @@ h1 {
     left: 257px;
     top: 8px;
     bottom: 46px;
-    margin: 15px auto
+    margin: 15px auto;
 }
-.InfoTitles p{
+.InfoTitle p{
     text-align: center;
     font-size: 14px;
     color: black;
     direction: rtl;
     position: relative;
-    top: 11%;
-    /* right: 80px; */
-    /* transform: translateY(9%); */
+    top: 2px;
     font-family: myFont;
 }
 nav{
@@ -153,18 +220,362 @@ nav{
     width: 1368px;
     height: 54px;
     border: 1px solid transparent;
-    background-color: #3359FF;
+    background-color: #5c7480;
     margin: auto;
 }
+.mainmenu {
+    position: relative;
+    right: 90px;
+    top: 4px;
+}
+.Fetch{
+    border:1px solid transparent;
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    margin: auto;
+}
+
 .nav-links{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 13px 20px;
-    font-family: myFont;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    background-color: transparent;
 }
 .nav-links li{
-    color: white
+     color: white;
+     margin-right: 22px;
+     list-style: none;
+     float: right;
+     padding: 0px 0px;
+     border: 1px solid transparent;
+     box-sizing: border-box;
+ }
+li a:hover {
+    background-color:transparent;
+}
+.nav-links .homePage{
+    /*position: relative;*/
+    /*right: -645px;*/
+}
+.nav-links .aboutLink{
+    /*padding-left: 33px;*/
+    /*position: relative;*/
+    /*right: -55px;*/
+}
+.nav-links .shopLink{
+     /*position: relative;*/
+    /*right: 60px;*/
+ }
+.nav-links .offersLink{
+    /*position: relative;*/
+    /*right: 172px;*/
+}
+
+:root {
+    --mainColor: #ffffff;
+}
+a {
+     color: var(--mainColor);
+     text-decoration: none;
+ }
+a:hover {
+    transition: 0.3s;
+    color: #D19A58;
+    text-decoration: none;
+}
+.myShoppingPage{
+    border: 1px solid #f6e3e3;
+    width: 820px;
+    height: 440px;
+    position: relative;
+    left: 0px;
+    top: 50px;
+    margin: auto;
+}
+.myShoppingPage .UserOtherInfo{
+    border: 1px solid #e36161;
+    height: 50px;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+    left: 560px;
+    top: 87px;
+    background-color: #ff8a8a;
+}
+.myShoppingPage .UserOtherInfoContent{
+     border: 1px solid #e9d9d9;
+     height: 50px;
+     border-radius: 4px;
+     width: 450px;
+     position: relative;
+     left: 80px;
+     top: -64px;
+ }
+.myShoppingPage .UserOtherInfoContent1{
+    border: 1px solid #e9d9d9;
+    height: 50px;
+    border-radius: 4px;
+    width: 450px;
+    position: relative;
+    left: 80px;
+    top: -42px;
+}
+.myShoppingPage .UserOtherInfo1{
+    border: 1px solid #e36161;
+    height: 50px;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+    left: 560px;
+    top: 108px;
+    background-color: #ff8a8a;
+}
+.myShoppingPage h4{
+    color: white;
+    font-family: myFont;
+    font-size: 14px;
+    padding: 13px 20px;
+}
+.myShoppingPage .UserOtherInfoContent input{
+    border: 1px solid transparent;
+    height: 48px;
+    border-radius: 4px;
+    width: 448px;
+    position: relative;
+    left: 0px;
+    direction: rtl;
+    top: 0px;
+    padding: 13px 20px;
+}
+.myShoppingPage .UserOtherInfoContent1 input{
+    border: 1px solid transparent;
+    height: 48px;
+    border-radius: 4px;
+    width: 448px;
+    position: relative;
+    left: 0px;
+    direction: rtl;
+    top: 0px;
+    padding: 13px 20px;
+}
+.myShoppingPage .UserOtherInfo2{
+    border: 1px solid #e36161;
+    height: 50px;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+    left: 560px;
+    top: 130px;
+    background-color: #ff8a8a;
+}
+.myShoppingPage .UserOtherInfoContent2{
+    border: 1px solid #e9d9d9;
+    height: 50px;
+    border-radius: 4px;
+    width: 450px;
+    position: relative;
+    left: 80px;
+    top: -20px;
+}
+.myShoppingPage .UserOtherInfoContent2 input{
+    border: 1px solid transparent;
+    height: 48px;
+    border-radius: 4px;
+    width: 448px;
+    position: relative;
+    left: 0px;
+    direction: rtl;
+    top: 0px;
+    padding: 13px 20px;
+}
+button{
+    background-color: #6c9abf;
+    font-size: 18px;
+    height: 60px;
+    width: 130px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: myFont;
+}
+.Info1Title{
+    position: relative;
+    left: 740px;
+    top: -28px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.InfoTitle{
+    position: relative;
+    left: 480px;
+    top: 17px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info2Title{
+    position: relative;
+    left: 740px;
+    top:-10px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info3Title{
+    position: relative;
+    left: 740px;
+    top:6px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info4Title{
+    position: relative;
+    left: 740px;
+    top:20px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Pishkhan{
+    border: 1px solid transparent;
+    background: #e29a9a;    width: 205px;
+    height: 395px;
+    position: relative;
+    top: -305px;
+    left: 499px;
+    box-shadow: 0 2px 3px;
+    color: white;
+    margin: auto;
+    }
+.Pishkhan p{
+    padding: 140px 20px;
+    font-size: 42px;
+}
+.Info2About{
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
+    height: 38px;
+    position: absolute;
+    top: 270px;
+    left: 180px;
+    margin: auto;
+}
+.Info3About{
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
+    height: 38px;
+    position: absolute;
+    top: 217px;
+    left: 180px;
+    margin: auto;
+}
+.InfoAbout{
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
+    height: 38px;
+    position: relative;
+    top: 109px;
+    left: -150px;
+    margin: auto;
+}
+.Info1About{
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 550px;
+    height: 38px;
+    position: absolute;
+    top: 163px;
+    left: 180px;
+    margin: auto;
+}
+.PishkhanAbout{
+    border: 1px solid transparent;
+    background: #e29a9a;    width: 205px;
+    height: 395px;
+    position: relative;
+    top: -188px;
+    left: 499px;
+    box-shadow: 0 2px 3px;
+    color: white;
+    margin: auto;
+}
+.PishkhanAbout p{
+    padding: 140px 20px;
+    font-size: 42px;
+}
+.Info1TitleAbout{
+    position: relative;
+    left: 740px;
+    top: 71px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info2TitleAbout{
+    position: relative;
+    left: 740px;
+    top:87px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info3TitleAbout{
+    position: relative;
+    left: 740px;
+    top:104px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
+}
+.Info4TitleAbout{
+    position: relative;
+    left: 740px;
+    top:118px;
+    border: 1px solid #e9d9d9;
+    box-shadow: 0 2px 3px #e9d9d9;
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #e36161;
+    color: white;
 }

@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './ProPlaceHolder.css';
 
-function Navbar  (props) {
+class Navbar extends Component {
+    render() {
         return (
             <div className="navPro">
-                <p className="navp">{props.name}</p>
+                <p className="nav">{this.props.name}</p>
             </div>
         );
+    }
 }
 
 export default Navbar;

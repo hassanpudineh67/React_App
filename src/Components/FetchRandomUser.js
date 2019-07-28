@@ -13,18 +13,26 @@ export default class FetchRandomUser extends Component{
         this.setState({person: data.results[0], loading: false});
     }
    render(){
-           return( <div> {this.state.loading|| !this.state.person ?
+           return( <div className="FetchedContent"> {this.state.loading|| !this.state.person ?
            (
            <div></div>
            ):(
-           <div className="ProfileStyle">
-            <img className="fetchedImage" src={this.state.person.picture.large} />
-            <div className="Info">{this.state.person.name.first}</div>
-            <div className="Info1">{this.state.person.name.last}</div>
-            <div className="Info2">{this.state.person.dob.age}</div>
-            <div className="Info3">{this.state.person.email}</div>
 
+        <div className="Fetch">
+            <img className="fetchedImage" src={this.state.person.picture.large} />
+            <div className="Info"><p>{this.state.person.name.first}</p></div>
+            <div className="Info1"><p>{this.state.person.name.last}</p></div>
+            <div className="Info2"><p>{this.state.person.dob.age}</p></div>
+            <div className="Info3"><p>{this.state.person.email}</p></div>
+            <div className="Info1Title">نام</div>
+            <div className="Info2Title">نام خانوادگی</div>
+            <div className="Info3Title">سن</div>
+            <div className="Info4Title">آدرس ایمیل</div>
+            <div className="Pishkhan">
+                 <p>پیشخوان کاربر</p>
+            </div>
         </div>
+
         )}
         </div>
         );

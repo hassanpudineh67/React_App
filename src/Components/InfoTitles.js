@@ -3,7 +3,7 @@ import './ProPlaceHolder.css';
 
 function InfoTitles  (props) {
     return (
-        <div className="InfoTitles">
+        <div className="InfoTitle">
             <p>{props.name}</p>
         </div>
     );
