@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import './App.css';
+import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FetchRandomUser from './Components/FetchRandomUser.js';
 import InfoTitles from './Components/InfoTitles.js';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Components/Nav.js';
-import About from './Components/About.js';
-import Shop from './Components/Shop.js';
-import Navbar from './Components/Navbar.js';
+import About from './Routes/About.js';
+import Shop from './Routes/Shop.js';
 class App extends Component {
 
     render() {

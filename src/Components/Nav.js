@@ -1,21 +1,8 @@
 import React from 'react';
-import './ProPlaceHolder.css';
+import '../css/ProPlaceHolder.css';
 import {Link} from "react-router-dom";
 
 function Nav() {
-    const navStyle={
-                }
-    const navStyle1={
-        // paddingLeft:"10px"
-    }
-    const navStyle2={
-        // paddingLeft:"10px"
-    }
-    const navStyle3={
-        // paddingLeft:"10px"
-    }
-
-
     return(
         <nav>
             <div className="inputWithIcon">
@@ -26,23 +13,23 @@ function Nav() {
                 <ul className="nav-links">
 
                         <li className="homePage">
-                            <Link style={navStyle3} to='/homePage'>
+                            <Link to='/homePage'>
                                 صفحه اصلی
                             </Link>
                         </li>
                         <li className="aboutLink">
-                            <Link style={navStyle} to='/about'>
+                            <Link to='/about'>
                                 درباره
                             </Link>
                         </li>
 
                         <li className="shopLink">
-                            <Link style={navStyle1} to='/shop'>
+                            <Link to='/shop'>
                             راه های ارتباطی
                             </Link>
                         </li>
                         <li className="offersLink">
-                            <Link style={navStyle2} to='/offers'>
+                            <Link to='/offers'>
                             کاربران برتر
                             </Link>
                         </li>

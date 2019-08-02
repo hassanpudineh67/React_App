@@ -1,6 +1,6 @@
 @font-face {
     font-family:myFont;
-    src: url('./irsans.ttf');
+    src: url('../Components/Assets/Fonts/irsans.ttf');
 }
 *{
     font-family: myFont;

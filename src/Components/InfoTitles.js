@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProPlaceHolder.css';
+import '../css/ProPlaceHolder.css';
 
 function InfoTitles  (props) {
     return (

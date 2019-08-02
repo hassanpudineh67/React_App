@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './ProPlaceHolder.css';
+import '../css/ProPlaceHolder.css';
 
 class Shop extends Component {
 
