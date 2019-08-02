@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Components/Nav.js';
 import About from './Routes/About.js';
 import Shop from './Routes/Shop.js';
+import './css/ProPlaceHolder.css';
 class App extends Component {
 
     render() {
